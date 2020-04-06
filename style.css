@@ -1,0 +1,11 @@
+head{
+    background-color: red;
+}
+h1{
+    color:black;
+    background-color:red;
+    padding: 10px;
+}
+body{
+    font: 100%/1 "Open Sans", Helvetica, Arial, sans-serif;
+}
