@@ -3,8 +3,8 @@ head{
 }
 h1{
     color:black;
-    background-color:red;
     padding: 10px;
+    font: 300%/1 "Open Sans", Helvetica, Arial, sans-serif;
 }
 body{
     font: 100%/1 "Open Sans", Helvetica, Arial, sans-serif;
