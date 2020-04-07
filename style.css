@@ -2,15 +2,31 @@
 h1{
     color:black;
     padding: 10px;
-    font: 300%/1 "Open Sans", Helvetica;
+    font: 300%/1 "Lato",Helvetica,Arial,sans-serif;
+    text-align: center;
 }
-body{
-    font: 100%/1 "Open Sans", Helvetica;
+
+head{
+    margin: 1in, 0, 1in, 0;
+}
+.header_Background{
+    background-color: #cccccc;
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 0.3in
+}
+.indent{
+    font: 100%/1 "Lato",Helvetica,Arial,sans-serif;
+    margin-left: 195px;
+    margin-right: 195px;
 }
 
 .MyImage{
     border-radius: 50%;
     border-color: silver;
     border-width: 10px;
-    border-style: solid
+    border-style: solid;
 }
