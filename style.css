@@ -54,6 +54,23 @@ head{
     display: flex;
 }
 
+#box-4{
+  width: 50%;
+  display: flex;
+  padding: 5%;
+}
+#box-5{
+  width: 50%;
+  display: flex;
+  padding: 5%;
+}
+
+#box-6{
+  width: 45%;
+  display: flex;
+  justify-content:center;
+} 
+
 /* Social Media buttons */
 button.fa {
     padding-left: 10px;
@@ -134,7 +151,7 @@ textarea:focus {
   border-color: #000;
 }
 
-ul li{
+.li_Form{
   list-style: none;
   padding: 0;
   margin: 0;
