@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <title>Contact Us</title>
+    <!--ICONS FOR SOCIAL MEDIA-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <head >
+        <nav class="flex-nav">
+            <ul>
+                <a href="my-portfolio.html" class="nav-link">About Me</a>
+                <a href="" class="nav-link">Header 2</a>
+                <a href="" class="nav-link">Header 3</a>
+                <a href="Contact_Us.html" class="nav-link">Contact Us</a>
+            </ul>
+       </nav>
+
+        <div class="header_Background">
+            <h1>Contact Us</h1>
+        </div>
+    </head>
+    <br>    <!--leave a gap between the header and the body-->
+    <body>
+        <div ID="box-container">
+            <div id="box-1"></div>  <!--empty box to the left to allow data to stay in the middle 1/3 page-->
+            <div id="box-2" style="width: 60%">
+                <div id="box-4" style="position: relative">
+                    <img style="Width: 200%" class="responsive-img"src="letter.svg" alt="letter" />
+                </div>
+                <div id="box-5" style="position: relative">
+                    <form action="My_Request_Form" method="POST">
+                        <ul class="li_Form">
+                            <li>
+                                <input class="Input_Text" type="text" placeholder="Name" ID="Name" name="Username">
+                            </li>
+                            <br>
+                            <li>
+                                <input class="Input_Text" type="email" placeholder="Email Address" id="mail" name="user_email">
+                            </li>
+                            <br>
+                            <li>
+                                <input class="Input_Text" style="height: 100px" type="Message" placeholder="Message" id="msg" name="message">
+                            </li>
+                            <li>
+                                <button Class="Form_Button" id="Submit_But" type="submit">Submit</button>
+                                <button Class="Form_Button" id="Clear_But" type="submit">Clear</button>
+                            </li>
+                        </ul>
+                        <br>
+                    </form>
+                </div>
+            </div>
+            <div id="box-3"></div>  <!--empty box to the right to allow data to stay in the middle 1/3 page-->
+        </div>
+        <br>
+
+    </body>
+
+    <script>
+        document.getElementById("Submit_But").onclick = function() {
+            var Form_Name = document.getElementById('Name').value;
+            var Form_Email = document.getElementById('mail').value;
+            var Form_Message = document.getElementById('msg').value;
+            alert(Form_Name + Form_Email + Form_Message)
+        }
+    </script>
+    <footer>
+        
+    </footer>
+
+</html>
