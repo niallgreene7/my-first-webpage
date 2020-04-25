@@ -29,22 +29,23 @@
                     <img style="Width: 200%" class="responsive-img"src="letter.svg" alt="letter" />
                 </div>
                 <div id="box-5" style="position: relative">
-                    <form action="My_Request_Form" method="POST">
+                    <form id="UserForm" action="My_Request_Form" method="POST">
                         <ul class="li_Form">
                             <li>
-                                <input class="Input_Text" type="text" placeholder="Name" ID="Name" name="Username">
+                                <input class="Input_Text" type="text" placeholder=" Name" ID="Name" name="Username">
                             </li>
                             <br>
                             <li>
-                                <input class="Input_Text" type="email" placeholder="Email Address" id="mail" name="user_email">
+                                <input class="Input_Text" type="email" placeholder=" Email Address" id="mail" name="user_email">
                             </li>
                             <br>
                             <li>
-                                <input class="Input_Text" style="height: 100px" type="Message" placeholder="Message" id="msg" name="message">
+                                <input class="Input_Text" style="height: 100px" type="Message" placeholder=" Message" id="msg" name="message">
                             </li>
                             <li>
-                                <button Class="Form_Button" id="Submit_But" type="submit">Submit</button>
-                                <button Class="Form_Button" id="Clear_But" type="submit">Clear</button>
+                                <button Class="Form_Button" id="Submit_But" type="button">Submit</button>
+                                <button Class="Form_Button" id="Clear_But" type="reset">Clear</button>
+                                <button Class="Form_Button" id="Help_But" type="button">Help</button>
                             </li>
                         </ul>
                         <br>
@@ -63,6 +64,17 @@
             var Form_Email = document.getElementById('mail').value;
             var Form_Message = document.getElementById('msg').value;
             alert(Form_Name + Form_Email + Form_Message)
+        }
+    </script>
+
+    <script>
+        document.getElementById("Help_But").onclick = function() {
+            var FormText = document.getElementById('UserForm')
+            var Span = document.createElement('SPAN')
+            Span.textContent = "Fill in all Fields to leave a comment, we'll get back to you as soon as possible"
+            Span.setAttribute("class","text-Format")
+            Span.setAttribute("id","Help_Text") 
+            FormText.appendChild(Span)    
         }
     </script>
     <footer>
