@@ -9,11 +9,10 @@
     <head >
         <nav class="flex-nav">
             <ul>
+                <a href="" class="nav-link">Home</a>
                 <a href="my-portfolio.html" class="nav-link">About Me</a>
-                <a href="" class="nav-link">Header 2</a>
-                <a href="" class="nav-link">Header 3</a>
                 <a href="Contact_Us.html" class="nav-link">Contact Us</a>
-            </ul>
+                     </ul>
        </nav>
 
         <div class="header_Background">
@@ -63,18 +62,21 @@
             var Form_Name = document.getElementById('Name').value;
             var Form_Email = document.getElementById('mail').value;
             var Form_Message = document.getElementById('msg').value;
-            alert(Form_Name + Form_Email + Form_Message)
+            alert("Thank you for your comment:" + "\n" + Form_Name + "\n" + Form_Email + "\n" + Form_Message)
         }
     </script>
 
     <script>
         document.getElementById("Help_But").onclick = function() {
             var FormText = document.getElementById('UserForm')
-            var Span = document.createElement('SPAN')
-            Span.textContent = "Fill in all Fields to leave a comment, we'll get back to you as soon as possible"
-            Span.setAttribute("class","text-Format")
-            Span.setAttribute("id","Help_Text") 
-            FormText.appendChild(Span)    
+            var VisText = document.getElementById('Help_Text')
+            if (VisText == null){
+                var Span = document.createElement('SPAN')
+                Span.textContent = "Fill all fields to leave a comment or question, we'll get back to you as soon as possible"
+                Span.setAttribute("class","text-Format")
+                Span.setAttribute("id","Help_Text") 
+                FormText.appendChild(Span)    
+            }
         }
     </script>
     <footer>
